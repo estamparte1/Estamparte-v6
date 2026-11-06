@@ -1,0 +1,36 @@
+ESTAMPARTE CONTROL V6 — ACTUALIZACIÓN COMPLETA
+
+IMPORTANTE: ANTES DE CAMBIAR ARCHIVOS
+1. Abre ESTAMPARTE CONTROL V5 en tu iPhone.
+2. Entra a RESPALDO y descarga un archivo JSON completo.
+3. Conserva ese archivo en Archivos, preferiblemente también en iCloud Drive.
+
+INSTALAR LA V6 EN EL MISMO GITHUB PAGES
+1. Descomprime el ZIP de V6 en Archivos de tu iPhone.
+2. Abre el mismo repositorio de GitHub de tu aplicación V5.
+3. Reemplaza los archivos existentes con los del ZIP y agrega el archivo NUEVO pdf.js.
+4. Sube TODOS los archivos de la carpeta directamente a la raíz del repositorio.
+5. Confirma los cambios (Commit changes).
+6. Espera a que GitHub Pages termine de publicar y vuelve a abrir la aplicación.
+7. Si ves V5, cierra completamente la aplicación y vuelve a abrirla; la caché de la PWA puede tardar en actualizar.
+8. Comprueba en la cabecera que diga V6.
+
+MEJORAS
+- Vista previa de PDF dentro de la aplicación con botones para compartir, guardar y regresar.
+- El PDF es un archivo PDF real generado localmente en el teléfono, sin servicios externos.
+- La función Compartir utiliza el menú nativo de iPhone cuando el navegador lo permite.
+- Si iOS no admite compartir el archivo desde la PWA, se descarga el PDF para enviarlo desde Archivos.
+- Los pedidos marcados como Entregados desaparecen del calendario, lista semanal, surtido activo, avisos y lista principal de pedidos pendientes.
+- Historial de entregados en Pedidos > Mostrar pedidos > Historial de entregados.
+- Para volver a mostrar un pedido, abre el historial, desmarca Entregado en seguimiento y guarda.
+- Los ingresos, abonos y gastos NO se eliminan al marcar Entregado; continúan en los reportes originales.
+
+ALMACENAMIENTO
+Se mantiene exactamente el nombre de base de datos IndexedDB 'estamparte-control-v4' de la V5, para conservar datos cuando la URL/origen y el navegador son los mismos.
+Nunca elimines la app ni limpies los datos del sitio antes de guardar respaldo.
+
+PRUEBAS RECOMENDADAS
+- Genera un PDF de un pedido con abono y verifica saldo, imágenes, compartir, guardar y cerrar.
+- Marca un pedido de prueba como Entregado: debe desaparecer del calendario y pendientes, pero aparecer en Historial de entregados.
+- Comprueba que los importes del reporte mensual no cambien por marcarlo entregado.
+- Desmarca Entregado y confirma que reaparezca en agenda y pendientes.
